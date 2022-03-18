@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import React from 'react';
+import Section from './components/Section'
+import {BrowserRouter,Route,Switch} from 'react-router-dom' 
+import Medicines from "./components/Medicines"
+import Addreminder from './components/Addreminder';
+import Meditationex from './components/Meditationex';
+import Meditation from './components/Meditation';
+import Medtimer from './components/Medtimer';
+import music from './components/music';
+import sleep from './components/Sleep/sleep';
+import sleepStories from './components/Sleep/sleepStories';
+import medSleep from './components/Sleep/medSleep';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+          
+         <switch>
+    
+          <Route exact path="/" component = {Section}></Route>
+          <Route path ="/medicines" component = {Medicines}></Route>
+          <Route path="/addreminder" component={Addreminder}></Route>
+          <Route path="/Meditationex" component ={Meditationex}></Route>
+          <Route path="/Meditation" component ={Meditation}></Route>
+          <Route path="/Medtimer" component ={Medtimer}></Route>  
+          <Route path="/music" component ={music}></Route>
+          <Route path="/sleep" component ={sleep}></Route>
+          <Route path="/sleepStories" component={sleepStories}></Route>
+          <Route path="/medSleep" component={medSleep}></Route>
+          
+         </switch>
+
+      </BrowserRouter>
+      
+         </div>
   );
 }
 
