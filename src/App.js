@@ -11,7 +11,7 @@ import music from './components/music';
 import sleep from './components/Sleep/sleep';
 import sleepStories from './components/Sleep/sleepStories';
 import medSleep from './components/Sleep/medSleep';
-
+import urgentHelp from './components/urgent/urgentHelp';
 function App() {
   return (
     
@@ -30,7 +30,7 @@ function App() {
           <Route path="/sleep" component ={sleep}></Route>
           <Route path="/sleepStories" component={sleepStories}></Route>
           <Route path="/medSleep" component={medSleep}></Route>
-          
+          <Route path="/urgentHelp" component={urgentHelp} ></Route>
          </switch>
 
       </BrowserRouter>

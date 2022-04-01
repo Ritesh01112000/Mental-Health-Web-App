@@ -56,8 +56,8 @@ class Section extends Component {
                  </h>
                      <br/>
                      <div className="pb-3"></div>
-                    <button type="button" style={{borderRadius:15}} class="btn btn-success "><FaIcons.FaArrowRight style={{width:"100px",fontSize:"50px",height:"20px"}}/></button>
-                 
+                   <Link to="urgentHelp"> <button type="button" style={{borderRadius:15}} class="btn btn-success "><FaIcons.FaArrowRight style={{width:"100px",fontSize:"50px",height:"20px"}}/></button>
+                   </Link>            
                  </div>
                 </div> 
            </div>
